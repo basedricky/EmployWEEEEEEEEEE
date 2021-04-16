@@ -67,7 +67,7 @@ function viewAllEmployees() {
 
     // query to view all employees
 
-    let query = '"SELECT e.id, e.first_name, e.last_name, role.title, department.name AS department, role.salaryFROM employee e INNER JOIN role ON e.role_id = role.id INNER JOIN department ON role.department_id = department.id ORDER BY ID ASC";';
+    let query = 'SELECT CONCAT(e.first_name, " ", e.last_name) AS Employee,title,salary,name,CONCAT(A.first_name, " ",A.last_name) AS ManagerName FROM employee e LEFT JOIN role R on e.role_id = R.id LEFT JOIN department D on r.department_id = D.id LEFT JOIN employee A on e.manager_id = a.id';
 
     // Query from connection
     connection.query(query, function (err, res) {
@@ -78,7 +78,7 @@ function viewAllEmployees() {
         console.table(res);
 
         // this will take us back to the beginning
-        mainMenu();
+        startPrompt();
     });
 
 }

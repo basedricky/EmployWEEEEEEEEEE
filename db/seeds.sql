@@ -2,7 +2,7 @@ USE employee_db;
 INSERT INTO
   department (name)
 VALUES
-  ("HR");
+  ("Management");
 INSERT INTO
   department (name)
 VALUES
@@ -18,7 +18,7 @@ VALUES
 INSERT INTO
   role (title, salary, department_id)
 VALUES
-  ("HR Director", 100, 1);
+  ("CFO", 1000, 1);
 INSERT INTO
   role (title, salary, department_id)
 VALUES
@@ -38,20 +38,20 @@ VALUES
 INSERT INTO
   employee (first_name, last_name, role_id)
 VALUES
-  ("Murphy", "Charlie", 2);
+  ("Murphy", "Charlie", 2, 1);
 INSERT INTO
   employee (first_name, last_name, role_id)
 VALUES
-  ("James", "Rick", 1);
+  ("James", "Rick", 2, 1);
 INSERT INTO
   employee (first_name, last_name, role_id)
 VALUES
-  ("Johnson", "Silky", 3);
+  ("Johnson", "Silky", 3, 1);
 INSERT INTO
   employee (first_name, last_name, role_id)
 VALUES
-  ("Gaga", "Lady", 4);
+  ("Gaga", "Lady", 4, 1);
 INSERT INTO
   employee (first_name, last_name, role_id)
 VALUES
-  ("Wong", "Aly", 5);
+  ("Wong", "Aly", 5, 1);
