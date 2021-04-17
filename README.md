@@ -2,6 +2,9 @@
   
   # EmployWEEEEEEEEEE
   
+  Deployed Application: https://github.com/basedricky/EmployWEEEEEEEEEE
+  Youtube Video: https://www.youtube.com/watch?v=IL0zVwaJ7z0
+
 
   ## Description
 
